@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#64d8fe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WeatherActivity"
+    android:orientation="vertical">
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="15dp"
+        android:onClick="getGPS"
+        android:text="Geolocation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:hint="City"
+        android:id="@+id/etCity"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tvLocationGPS"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="159dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            android:onClick="viewWeather"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="id"
+                android:id="@+id/tvId"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="main"
+                android:id="@+id/tvMain"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="description"
+                android:id="@+id/tvDescription"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:hint="25°C"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/btnCompte"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:onClick="btnLogin"
+        android:text="MON COMPTE"
+        android:textSize="20sp" />
+
+</LinearLayout>
