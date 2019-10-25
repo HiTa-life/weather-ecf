@@ -1,20 +1,12 @@
 package com.example.weatheractivity.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
-import android.Manifest;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.weatheractivity.ILocationServiceListener;
 import com.example.weatheractivity.IWeatherServiceListener;
 import com.example.weatheractivity.R;
-import com.example.weatheractivity.models.Location;
 import com.example.weatheractivity.models.Weather;
-import com.example.weatheractivity.services.CityService;
-import com.example.weatheractivity.services.LocationService;
 import com.example.weatheractivity.services.WeatherService;
 
 public class WeatherActivity extends AppCompatActivity implements IWeatherServiceListener {
