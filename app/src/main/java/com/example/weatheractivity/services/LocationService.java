@@ -39,16 +39,16 @@ public class LocationService implements LocationListener {
         iLocationServiceListener.onLocationSuccess(newLocation);
     }
 
-    @Override
+
     public void onStatusChanged(String provider, int status, Bundle extras) {
 
     }
 
-    @Override
+
     public void onProviderEnabled(String provider) {
     }
 
-    @Override
+
     public void onProviderDisabled(String provider) {
     }
 
